@@ -10,8 +10,11 @@
 #include <thread>
 #include <vector>
 
-// 加速方法: 使用了多线程、cache两种加速方法
-// 服务器测试结果:
+// Ways to speed up matrix multiplication:
+//      Higher Cache Hit Rate
+//      Parallel Programming
+//
+// Test results on the server:
 //        matrix size                    average time           GFlops
 // (512 * 512)   x (512 * 512)          18953.697800 us         14.162696
 // (1024 * 1024) x (1024 * 1024)        76267.036800 us         28.157429

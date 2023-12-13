@@ -14,8 +14,12 @@
 #include <emmintrin.h>
 #include <vector>
 
-// 加速方法: 使用了多线程、cache、SSE3指令集三种方法加速
-// 服务器测试结果:
+// Ways to speed up matrix multiplication:
+//      Higher Cache Hit Rate
+//      Parallel Programming
+//      SSE3 Instruction Set
+//
+// Test results on the server:
 //        matrix size                    average time           GFlops
 // (512 * 512)   x (512 * 512)          17766.459400 us         15.109
 // (1024 * 1024) x (1024 * 1024)        62070.710800 us         34.597375
